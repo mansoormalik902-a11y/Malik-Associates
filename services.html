@@ -1,405 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Services | Malik Associates</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,sans-serif;
-background:#f5f7fa;
-color:#333;
-line-height:1.7;
-}
-
-header{
-background:#003366;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-header img{
-width:120px;
-margin-bottom:15px;
-}
-
-header h1{
-font-size:42px;
-}
-
-header h3{
-color:#d4af37;
-margin-top:10px;
-}
-
-nav{
-background:#002244;
-padding:15px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
-
-nav a:hover{
-text-decoration:underline;
-}
-
-.hero{
-background:white;
-padding:60px 20px;
-text-align:center;
-}
-
-.hero h2{
-font-size:42px;
-color:#003366;
-margin-bottom:15px;
-}
-
-.hero p{
-max-width:900px;
-margin:auto;
-}
-
-.container{
-max-width:1600px;
-margin:auto;
-padding:60px 20px;
-}
-
-.service-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-}
-
-.service-card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-border-top:5px solid #003366;
-transition:all .3s ease;
-min-height:340px;
-}
-
-.service-card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
-}
-
-.service-card h3{
-color:#003366;
-margin-bottom:15px;
-font-size:22px;
-}
-
-.service-card ul{
-padding-left:20px;
-}
-
-.service-card li{
-margin-bottom:10px;
-}
-
-.why-section{
-background:white;
-padding:50px;
-margin-top:50px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
-}
-
-.why-section h2{
-text-align:center;
-color:#003366;
-margin-bottom:30px;
-}
-
-.why-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
-
-.why-card{
-background:#f5f7fa;
-padding:20px;
-border-radius:10px;
-text-align:center;
-font-weight:bold;
-}
-
-footer{
-background:#003366;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:50px;
-}
-
-@media(max-width:1200px){
-
-.service-grid,
-.why-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-@media(max-width:768px){
-
-.service-grid,
-.why-grid{
-grid-template-columns:1fr;
-}
-
-nav a{
-display:block;
-margin:10px;
-}
-
-header h1{
-font-size:30px;
-}
-
-.hero h2{
-font-size:28px;
-}
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f5f7fa;color:#333;line-height:1.7}
+header{background:#003366;color:white;text-align:center;padding:40px 20px}
+header img{width:120px;margin-bottom:15px}
+header h1{font-size:42px}
+header h3{color:#d4af37}
+nav{background:#002244;padding:15px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold}
+.hero{background:white;padding:60px 20px;text-align:center}
+.hero h2{color:#003366;font-size:42px;margin-bottom:15px}
+.container{max-width:1600px;margin:auto;padding:50px 20px}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+.service-card{background:white;padding:25px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.08);border-top:5px solid #d4af37;cursor:pointer}
+.service-card h3{text-align:center;color:#003366}
+.service-details{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.service-card:hover .service-details{max-height:400px;margin-top:15px}
+.service-card:hover{transform:translateY(-8px)}
+.service-details ul{padding-left:20px}
+.service-details li{margin-bottom:8px}
+footer{background:#003366;color:white;text-align:center;padding:30px;margin-top:50px}
+@media(max-width:1200px){.service-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.service-grid{grid-template-columns:1fr} nav a{display:block;margin:10px}}
 </style>
-
 </head>
-
 <body>
-
 <header>
-
-<img src="Logo.jpeg" alt="Malik Associates Logo">
-
+<img src="Logo.jpeg" alt="Logo">
 <h1>Malik Associates</h1>
-
 <h3>CMAs & CAs</h3>
-
-<p>
-Trusted Financial Partner for Compliance, Growth & Advisory Excellence
-</p>
-
+<p>Trusted Financial Partner for Compliance, Growth & Advisory Excellence</p>
 </header>
-
 <nav>
-
 <a href="index.html">Home</a>
 <a href="about.html">About Us</a>
 <a href="services.html">Services</a>
 <a href="contact.html">Contact</a>
-
 </nav>
-
 <section class="hero">
-
-<h2>Our Professional Services</h2>
-
-<p>
-Comprehensive accounting, taxation, audit, compliance and business advisory solutions for startups, SMEs and corporate organizations.
-</p>
-
+<h2>Professional Service Portfolio</h2>
+<p>Hover over a service category to explore our specialist offerings.</p>
 </section>
-
 <div class="container">
-
 <div class="service-grid">
-
-<div class="service-card">
-<h3>📊 Accounting & Bookkeeping</h3>
-<ul>
-<li>Daily Bookkeeping</li>
-<li>General Ledger Maintenance</li>
-<li>Accounts Payable Management</li>
-<li>Accounts Receivable Management</li>
-<li>Bank Reconciliations</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>📈 Financial Reporting</h3>
-<ul>
-<li>Financial Statements Preparation</li>
-<li>Profit & Loss Reports</li>
-<li>Balance Sheet Preparation</li>
-<li>Cash Flow Statements</li>
-<li>Management Reporting</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>💰 Tax Services</h3>
-<ul>
-<li>Corporate Tax Registration</li>
-<li>Corporate Tax Return Filing</li>
-<li>VAT Registration</li>
-<li>VAT Return Filing</li>
-<li>Tax Planning & Advisory</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>🔍 Audit & Assurance</h3>
-<ul>
-<li>Internal Audits</li>
-<li>External Audit Coordination</li>
-<li>Compliance Audits</li>
-<li>Risk Assessment</li>
-<li>Audit Preparation Support</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>🏢 Business Setup Services</h3>
-<ul>
-<li>Company Formation</li>
-<li>Trade License Assistance</li>
-<li>Business Registration</li>
-<li>Corporate Structuring</li>
-<li>Business Bank Account Assistance</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>👥 Payroll & HR Services</h3>
-<ul>
-<li>Payroll Processing</li>
-<li>Salary Calculations</li>
-<li>WPS Processing</li>
-<li>Employee Records Management</li>
-<li>Leave & Gratuity Calculations</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>📋 Compliance Services</h3>
-<ul>
-<li>Corporate Compliance Monitoring</li>
-<li>AML Compliance Support</li>
-<li>UBO Filing Assistance</li>
-<li>Regulatory Documentation</li>
-<li>License Renewal Support</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>💡 Advisory & Consultancy</h3>
-<ul>
-<li>Business Planning</li>
-<li>Financial Strategy Consulting</li>
-<li>Cash Flow Management</li>
-<li>Cost Reduction Analysis</li>
-<li>Startup Consulting</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>📊 CFO Services</h3>
-<ul>
-<li>Virtual CFO Services</li>
-<li>Financial Planning</li>
-<li>KPI Development</li>
-<li>Board Reporting</li>
-<li>Investor Support</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>⚙ Software Solutions</h3>
-<ul>
-<li>QuickBooks Setup & Support</li>
-<li>Xero Implementation</li>
-<li>Zoho Books Setup</li>
-<li>ERP Accounting Support</li>
-<li>Financial System Migration</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>💼 Corporate Finance</h3>
-<ul>
-<li>Business Valuation</li>
-<li>Investment Analysis</li>
-<li>Capital Structuring</li>
-<li>Funding Advisory</li>
-<li>Financial Due Diligence</li>
-</ul>
-</div>
-
-<div class="service-card">
-<h3>🎓 Training & Development</h3>
-<ul>
-<li>Accounting Software Training</li>
-<li>VAT Workshops</li>
-<li>Financial Literacy Training</li>
-<li>Internal Control Training</li>
-<li>Compliance Awareness Programs</li>
-</ul>
-</div>
-
-</div>
-
-<div class="why-section">
-
-<h2>Why Choose Malik Associates?</h2>
-
-<div class="why-grid">
-
-<div class="why-card">Qualified CMAs, CAs & CPAs</div>
-<div class="why-card">Industry Specific Expertise</div>
-<div class="why-card">Technology Driven Solutions</div>
-<div class="why-card">Regulatory Compliance Specialists</div>
-<div class="why-card">Client-Centric Approach</div>
-<div class="why-card">Reliable & Confidential Service</div>
-<div class="why-card">Business Growth Focused</div>
-<div class="why-card">Strategic Financial Advisors</div>
-
-</div>
-
-</div>
-
-</div>
-
+<div class='service-card'><h3>Accounting & Financial Management</h3><div class='service-details'><ul><li>Financial Reporting & Compliance</li><li>Management Accounting</li><li>Financial Planning & Control</li><li>Accounting Transformation</li><li>Outsourced Finance Function</li></ul></div></div><div class='service-card'><h3>Tax Advisory & Compliance</h3><div class='service-details'><ul><li>Corporate Tax Services</li><li>VAT Advisory Services</li><li>International Taxation</li><li>Tax Dispute Resolution</li><li>Transaction Tax Advisory</li></ul></div></div><div class='service-card'><h3>Corporate Finance & Investment Advisory</h3><div class='service-details'><ul><li>Business Valuation</li><li>Financial Modeling</li><li>Capital Advisory</li><li>Mergers & Acquisitions</li><li>Investment Analysis</li></ul></div></div><div class='service-card'><h3>CFO & Strategic Finance Services</h3><div class='service-details'><ul><li>Virtual CFO Services</li><li>Business Performance Management</li><li>Cash Flow Management</li><li>Board & Investor Support</li><li>Financial Restructuring</li></ul></div></div><div class='service-card'><h3>Business Advisory & Management Consulting</h3><div class='service-details'><ul><li>Corporate Strategy</li><li>Organizational Advisory</li><li>Business Process Improvement</li><li>Family Business Advisory</li><li>Startup & SME Advisory</li></ul></div></div><div class='service-card'><h3>Audit, Risk & Assurance</h3><div class='service-details'><ul><li>Internal Audit Services</li><li>Risk Management Advisory</li><li>Internal Controls Advisory</li><li>Due Diligence Services</li><li>Regulatory Assurance</li></ul></div></div><div class='service-card'><h3>Corporate Governance & Compliance</h3><div class='service-details'><ul><li>Corporate Governance Advisory</li><li>Regulatory Compliance</li><li>AML & Risk Compliance</li><li>UBO & Transparency</li><li>ESG & Sustainability Advisory</li></ul></div></div><div class='service-card'><h3>Business Setup & Corporate Structuring</h3><div class='service-details'><ul><li>Company Formation Services</li><li>Corporate Structuring</li><li>Market Entry Advisory</li><li>Corporate Secretarial Services</li><li>Business Continuity Planning</li></ul></div></div><div class='service-card'><h3>Technology & Digital Finance Consulting</h3><div class='service-details'><ul><li>ERP & Finance Systems</li><li>Business Intelligence & Analytics</li><li>Process Automation</li><li>Technology Risk Advisory</li><li>Digital Finance Strategy</li></ul></div></div><div class='service-card'><h3>Training & Executive Development</h3><div class='service-details'><ul><li>Finance Leadership Programs</li><li>Corporate Tax Workshops</li><li>Governance Training</li><li>Financial Reporting Programs</li><li>Executive Advisory Sessions</li></ul></div></div><div class='service-card'><h3>Public Sector Advisory</h3><div class='service-details'><ul><li>Government Audit Support</li><li>Public Finance Management</li><li>Policy Advisory</li><li>Governance Frameworks</li><li>Institutional Development</li></ul></div></div><div class='service-card'><h3>International Business Services</h3><div class='service-details'><ul><li>Cross-Border Advisory</li><li>International Structuring</li><li>Global Compliance Support</li><li>Foreign Market Entry</li><li>International Expansion Strategy</li></ul></div></div>
+</div></div>
 <footer>
-
 <h3>Malik Associates CMAs & CAs</h3>
-
-<p>📧 info@malikassociates.com</p>
-
-<p>📞 +92 320 5515000</p>
-
-<p>📍 Wah Cantt | Islamabad | Rawalpindi | Dubai</p>
-
-<br>
-
+<p>Admin@MalikAssociates.com</p>
+<p>+92 320 5515 000</p>
 <p>© 2026 Malik Associates. All Rights Reserved.</p>
-
 </footer>
-
-</body>
-
-</html>
+</body></html>
