@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Services | Malik Associates</title>
 
 <style>
@@ -93,7 +92,7 @@ gap:25px;
 background:white;
 padding:30px;
 border-radius:12px;
-box-shadow:0 2px 12px rgba(0,0,0,0.08);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 .service-card h3{
@@ -107,6 +106,35 @@ padding-left:20px;
 
 .service-card li{
 margin-bottom:8px;
+}
+
+.why-section{
+padding:60px 20px;
+background:white;
+margin-top:40px;
+}
+
+.why-section h2{
+text-align:center;
+color:#003366;
+margin-bottom:30px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.why-card{
+background:#f5f7fa;
+padding:25px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
 footer{
@@ -129,7 +157,7 @@ font-size:28px;
 
 nav a{
 display:block;
-margin:10px 0;
+margin:10px;
 }
 
 }
@@ -142,7 +170,7 @@ margin:10px 0;
 
 <header>
 
-<img src="Logo.jpeg" alt="Malik Associates Logo">
+<img src="Logo.jpeg">
 
 <h1>Malik Associates</h1>
 
@@ -168,7 +196,7 @@ Trusted Financial Partner for Compliance, Growth & Advisory Excellence
 <h2>Our Professional Services</h2>
 
 <p>
-Comprehensive accounting, taxation, audit, compliance and business advisory solutions for startups, SMEs and corporate organizations.
+Comprehensive Accounting, Taxation, Audit, Compliance and Business Advisory Solutions.
 </p>
 
 </section>
@@ -178,155 +206,163 @@ Comprehensive accounting, taxation, audit, compliance and business advisory solu
 <div class="service-grid">
 
 <div class="service-card">
-<h3>📊 Accounting & Bookkeeping Services</h3>
+<h3>1. Accounting & Bookkeeping</h3>
 <ul>
 <li>Daily Bookkeeping</li>
 <li>General Ledger Maintenance</li>
-<li>Accounts Payable Management</li>
-<li>Accounts Receivable Management</li>
+<li>Accounts Payable</li>
+<li>Accounts Receivable</li>
 <li>Bank Reconciliations</li>
-<li>Payroll Accounting</li>
-<li>Month-End & Year-End Closing</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>📈 Financial Reporting</h3>
+<h3>2. Financial Reporting</h3>
 <ul>
-<li>Financial Statements Preparation</li>
+<li>Financial Statements</li>
 <li>Profit & Loss Reports</li>
-<li>Balance Sheet Preparation</li>
+<li>Balance Sheets</li>
 <li>Cash Flow Statements</li>
-<li>Management Reports</li>
-<li>Budgeting & Forecasting</li>
-<li>Financial Analysis</li>
+<li>Management Reporting</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>💰 Tax Services</h3>
+<h3>3. Tax Services</h3>
 <ul>
 <li>Corporate Tax Registration</li>
-<li>Corporate Tax Return Filing</li>
+<li>Corporate Tax Filing</li>
 <li>VAT Registration</li>
-<li>VAT Return Filing</li>
-<li>Tax Planning & Advisory</li>
-<li>Tax Compliance Reviews</li>
-<li>Tax Assessment Support</li>
-<li>Tax Audit Assistance</li>
+<li>VAT Filing</li>
+<li>Tax Advisory</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>🔍 Audit & Assurance</h3>
+<h3>4. Audit & Assurance</h3>
 <ul>
 <li>Internal Audits</li>
-<li>External Audit Coordination</li>
 <li>Compliance Audits</li>
-<li>Financial Controls Review</li>
 <li>Risk Assessment</li>
-<li>Audit Preparation Support</li>
+<li>Audit Preparation</li>
+<li>Financial Controls Review</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>🏢 Business Setup & Corporate Services</h3>
+<h3>5. Business Setup Services</h3>
 <ul>
 <li>Company Formation</li>
 <li>Trade License Assistance</li>
 <li>Business Registration</li>
 <li>Corporate Structuring</li>
 <li>PRO Services</li>
-<li>Document Attestation Support</li>
-<li>Business Bank Account Assistance</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>👥 Payroll & HR Services</h3>
+<h3>6. Payroll & HR Services</h3>
 <ul>
 <li>Payroll Processing</li>
 <li>Salary Calculations</li>
-<li>WPS Processing</li>
-<li>Employee Records Management</li>
-<li>Leave & Gratuity Calculations</li>
-<li>HR Policy Documentation</li>
+<li>Employee Records</li>
+<li>Leave Management</li>
+<li>HR Documentation</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>📋 Compliance & Regulatory Services</h3>
+<h3>7. Compliance & Regulatory Services</h3>
 <ul>
-<li>Corporate Compliance Monitoring</li>
-<li>Economic Substance Reporting</li>
-<li>AML Compliance Support</li>
-<li>UBO Filing Assistance</li>
+<li>Corporate Compliance</li>
+<li>AML Compliance</li>
+<li>UBO Filing</li>
 <li>Regulatory Documentation</li>
-<li>License Renewal Support</li>
+<li>License Renewals</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>💡 Advisory & Consultancy</h3>
+<h3>8. Advisory & Consultancy</h3>
 <ul>
 <li>Business Planning</li>
-<li>Financial Strategy Consulting</li>
-<li>Cost Reduction Analysis</li>
+<li>Financial Strategy</li>
 <li>Cash Flow Management</li>
-<li>Investment Feasibility Studies</li>
-<li>Business Performance Improvement</li>
+<li>Cost Reduction Analysis</li>
 <li>Startup Consulting</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>📊 CFO & Outsourced Finance Services</h3>
+<h3>9. CFO & Outsourced Finance</h3>
 <ul>
 <li>Virtual CFO Services</li>
 <li>Financial Planning</li>
 <li>KPI Development</li>
 <li>Board Reporting</li>
-<li>Funding & Investor Support</li>
-<li>Financial Process Improvement</li>
+<li>Investor Support</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>🎓 Training & Support</h3>
+<h3>10. Training & Support</h3>
 <ul>
 <li>Accounting Software Training</li>
-<li>VAT & Tax Workshops</li>
+<li>VAT Workshops</li>
 <li>Financial Literacy Training</li>
 <li>Internal Control Training</li>
-<li>Compliance Awareness Programs</li>
+<li>Compliance Awareness</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>⚙ Specialized Software Solutions</h3>
+<h3>11. Software & ERP Solutions</h3>
 <ul>
-<li>QuickBooks Setup & Support</li>
+<li>QuickBooks Setup</li>
 <li>Xero Implementation</li>
 <li>Zoho Books Setup</li>
-<li>ERP Accounting Support</li>
-<li>Financial System Migration</li>
-<li>Data Cleanup & Reconciliation</li>
+<li>ERP Support</li>
+<li>Data Migration</li>
 </ul>
 </div>
 
 </div>
 
 </div>
+
+<section class="why-section">
+
+<h2>Why Choose Malik Associates?</h2>
+
+<div class="why-grid">
+
+<div class="why-card">Qualified CMAs, CAs & CPAs</div>
+
+<div class="why-card">Industry-Specific Expertise</div>
+
+<div class="why-card">Regulatory Compliance Focus</div>
+
+<div class="why-card">Technology Driven Solutions</div>
+
+<div class="why-card">Client-Centric Approach</div>
+
+<div class="why-card">Reliable & Confidential Service</div>
+
+</div>
+
+</section>
 
 <footer>
 
 <h3>Malik Associates CMAs & CAs</h3>
 
-<p>Trusted Financial Partner for Compliance, Growth & Advisory Excellence</p>
-
 <p>📧 info@malikassociates.com</p>
 
 <p>📞 +92 320 5515000</p>
+
+<p>📍 Wah Cantt | Islamabad | Rawalpindi | Dubai</p>
+
+<br>
 
 <p>© 2026 Malik Associates. All Rights Reserved.</p>
 
