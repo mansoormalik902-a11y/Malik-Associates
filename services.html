@@ -1,22 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Malik Associates</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f7fa;
+color:#333;
+line-height:1.7;
+}
+
+header{
+background:#003366;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+header img{
+width:120px;
+margin-bottom:15px;
+}
+
+header h1{
+font-size:42px;
+}
+
+header h3{
+color:#d4af37;
+margin-top:10px;
+}
+
+nav{
+background:#002244;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.hero{
+background:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:42px;
+color:#003366;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+}
+
+.container{
+max-width:1600px;
+margin:auto;
+padding:60px 20px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.service-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+border-top:5px solid #003366;
+transition:all .3s ease;
+min-height:340px;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-card h3{
+color:#003366;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.service-card ul{
+padding-left:20px;
+}
+
+.service-card li{
+margin-bottom:10px;
+}
+
+.why-section{
+background:white;
+padding:50px;
+margin-top:50px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.why-section h2{
+text-align:center;
+color:#003366;
+margin-bottom:30px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.why-card{
+background:#f5f7fa;
+padding:20px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:1200px){
+
+.service-grid,
+.why-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.service-grid,
+.why-grid{
+grid-template-columns:1fr;
+}
+
+nav a{
+display:block;
+margin:10px;
+}
+
+header h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="Logo.jpeg" alt="Malik Associates Logo">
+
+<h1>Malik Associates</h1>
+
+<h3>CMAs & CAs</h3>
+
+<p>
+Trusted Financial Partner for Compliance, Growth & Advisory Excellence
+</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>Our Professional Services</h2>
+
+<p>
+Comprehensive accounting, taxation, audit, compliance and business advisory solutions for startups, SMEs and corporate organizations.
+</p>
+
+</section>
+
+<div class="container">
+
 <div class="service-grid">
 
 <div class="service-card">
 <h3>📊 Accounting & Bookkeeping</h3>
 <ul>
 <li>Daily Bookkeeping</li>
-<li>General Ledger Management</li>
+<li>General Ledger Maintenance</li>
+<li>Accounts Payable Management</li>
+<li>Accounts Receivable Management</li>
 <li>Bank Reconciliations</li>
-<li>Accounts Payable & Receivable</li>
 </ul>
 </div>
 
 <div class="service-card">
 <h3>📈 Financial Reporting</h3>
 <ul>
-<li>Financial Statements</li>
+<li>Financial Statements Preparation</li>
 <li>Profit & Loss Reports</li>
-<li>Balance Sheets</li>
+<li>Balance Sheet Preparation</li>
 <li>Cash Flow Statements</li>
+<li>Management Reporting</li>
 </ul>
 </div>
 
@@ -24,9 +255,10 @@
 <h3>💰 Tax Services</h3>
 <ul>
 <li>Corporate Tax Registration</li>
-<li>Corporate Tax Filing</li>
+<li>Corporate Tax Return Filing</li>
 <li>VAT Registration</li>
 <li>VAT Return Filing</li>
+<li>Tax Planning & Advisory</li>
 </ul>
 </div>
 
@@ -34,6 +266,7 @@
 <h3>🔍 Audit & Assurance</h3>
 <ul>
 <li>Internal Audits</li>
+<li>External Audit Coordination</li>
 <li>Compliance Audits</li>
 <li>Risk Assessment</li>
 <li>Audit Preparation Support</li>
@@ -47,56 +280,62 @@
 <li>Trade License Assistance</li>
 <li>Business Registration</li>
 <li>Corporate Structuring</li>
+<li>Business Bank Account Assistance</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>👥 Payroll Services</h3>
+<h3>👥 Payroll & HR Services</h3>
 <ul>
 <li>Payroll Processing</li>
 <li>Salary Calculations</li>
 <li>WPS Processing</li>
-<li>Employee Records</li>
+<li>Employee Records Management</li>
+<li>Leave & Gratuity Calculations</li>
 </ul>
 </div>
 
 <div class="service-card">
 <h3>📋 Compliance Services</h3>
 <ul>
-<li>Corporate Compliance</li>
-<li>AML Compliance</li>
-<li>UBO Filing</li>
-<li>License Renewals</li>
+<li>Corporate Compliance Monitoring</li>
+<li>AML Compliance Support</li>
+<li>UBO Filing Assistance</li>
+<li>Regulatory Documentation</li>
+<li>License Renewal Support</li>
 </ul>
 </div>
 
 <div class="service-card">
-<h3>💡 Advisory Services</h3>
+<h3>💡 Advisory & Consultancy</h3>
 <ul>
 <li>Business Planning</li>
-<li>Financial Strategy</li>
-<li>Cost Reduction Analysis</li>
+<li>Financial Strategy Consulting</li>
 <li>Cash Flow Management</li>
+<li>Cost Reduction Analysis</li>
+<li>Startup Consulting</li>
 </ul>
 </div>
 
 <div class="service-card">
 <h3>📊 CFO Services</h3>
 <ul>
-<li>Virtual CFO</li>
+<li>Virtual CFO Services</li>
 <li>Financial Planning</li>
 <li>KPI Development</li>
 <li>Board Reporting</li>
+<li>Investor Support</li>
 </ul>
 </div>
 
 <div class="service-card">
 <h3>⚙ Software Solutions</h3>
 <ul>
-<li>QuickBooks Setup</li>
+<li>QuickBooks Setup & Support</li>
 <li>Xero Implementation</li>
 <li>Zoho Books Setup</li>
-<li>ERP Support</li>
+<li>ERP Accounting Support</li>
+<li>Financial System Migration</li>
 </ul>
 </div>
 
@@ -107,6 +346,7 @@
 <li>Investment Analysis</li>
 <li>Capital Structuring</li>
 <li>Funding Advisory</li>
+<li>Financial Due Diligence</li>
 </ul>
 </div>
 
@@ -116,8 +356,50 @@
 <li>Accounting Software Training</li>
 <li>VAT Workshops</li>
 <li>Financial Literacy Training</li>
-<li>Compliance Awareness</li>
+<li>Internal Control Training</li>
+<li>Compliance Awareness Programs</li>
 </ul>
 </div>
 
 </div>
+
+<div class="why-section">
+
+<h2>Why Choose Malik Associates?</h2>
+
+<div class="why-grid">
+
+<div class="why-card">Qualified CMAs, CAs & CPAs</div>
+<div class="why-card">Industry Specific Expertise</div>
+<div class="why-card">Technology Driven Solutions</div>
+<div class="why-card">Regulatory Compliance Specialists</div>
+<div class="why-card">Client-Centric Approach</div>
+<div class="why-card">Reliable & Confidential Service</div>
+<div class="why-card">Business Growth Focused</div>
+<div class="why-card">Strategic Financial Advisors</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Malik Associates CMAs & CAs</h3>
+
+<p>📧 info@malikassociates.com</p>
+
+<p>📞 +92 320 5515000</p>
+
+<p>📍 Wah Cantt | Islamabad | Rawalpindi | Dubai</p>
+
+<br>
+
+<p>© 2026 Malik Associates. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
