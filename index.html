@@ -6,9 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Us | Malik Associates</title>
-
-<meta name="description" content="Malik Associates CMAs & CAs - Professional Accounting, Taxation, Audit Support and Business Advisory Services.">
+<title>Malik Associates | Home</title>
 
 <style>
 
@@ -22,7 +20,6 @@ body{
 font-family:Arial,sans-serif;
 background:#f5f7fa;
 color:#333;
-line-height:1.7;
 }
 
 header{
@@ -32,23 +29,14 @@ text-align:center;
 padding:40px 20px;
 }
 
-header img{
-width:120px;
-margin-bottom:15px;
-}
-
 header h1{
-font-size:42px;
+font-size:48px;
 margin-bottom:10px;
 }
 
 header h3{
 color:#d4af37;
 margin-bottom:15px;
-}
-
-header p{
-margin:6px 0;
 }
 
 nav{
@@ -64,59 +52,64 @@ margin:0 15px;
 font-weight:bold;
 }
 
-nav a:hover{
-text-decoration:underline;
-}
-
 .hero{
 background:white;
-padding:60px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
 .hero h2{
-font-size:42px;
+font-size:50px;
 color:#003366;
 margin-bottom:20px;
 }
 
 .hero p{
+font-size:20px;
 max-width:900px;
 margin:auto;
-font-size:18px;
+line-height:1.8;
 }
 
-.container{
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#003366;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.section{
 max-width:1200px;
 margin:auto;
-padding:50px 20px;
+padding:60px 20px;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:30px;
+color:#003366;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
-padding:30px;
-margin-bottom:25px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
-.card h2{
-color:#003366;
-margin-bottom:15px;
-}
-
-.values{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:20px;
-}
-
-.value-box{
-background:#f8f9fb;
-padding:20px;
-border-left:5px solid #003366;
-border-radius:8px;
+.why{
+background:#ffffff;
 }
 
 footer{
@@ -127,19 +120,31 @@ padding:30px;
 margin-top:40px;
 }
 
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
 @media(max-width:768px){
 
 header h1{
-font-size:30px;
+font-size:32px;
 }
 
 .hero h2{
-font-size:30px;
+font-size:32px;
 }
 
 nav a{
 display:block;
-margin:10px 0;
+margin:10px;
 }
 
 }
@@ -152,19 +157,12 @@ margin:10px 0;
 
 <header>
 
-<img src="logo.png" alt="Malik Associates Logo">
-
 <h1>Malik Associates</h1>
 
 <h3>CMAs & CAs</h3>
 
-<p>Trusted Financial Partner for Compliance, Growth & Advisory Excellence</p>
-
-<p>Professional Accounting, Taxation, Audit Support & Business Advisory Services</p>
-
 <p>
-📞 +92 320 5515000 |
-📧 info@malikassociates.com
+Trusted Financial Partner for Compliance, Growth & Advisory Excellence
 </p>
 
 </header>
@@ -185,134 +183,119 @@ margin:10px 0;
 
 <section class="hero">
 
-<h2>About Malik Associates</h2>
+<h2>Helping Businesses Grow Through Financial Excellence</h2>
 
 <p>
 
-Helping businesses achieve financial clarity, regulatory compliance,
-and sustainable growth through expert accounting, taxation,
-audit support and advisory services.
+Professional Accounting, Taxation, Audit Support,
+Virtual CFO, ERP Solutions and Business Advisory Services
+for SMEs and Corporate Organizations.
 
 </p>
+
+<a href="contact.html" class="btn">
+
+Book a Consultation
+
+</a>
 
 </section>
 
-<div class="container">
+<section class="section">
+
+<h2>Our Core Services</h2>
+
+<div class="cards">
 
 <div class="card">
-
-<h2>Who We Are</h2>
-
-<p>
-
-Malik Associates (CMAs & CAs) is a premier full-service accounting and advisory firm providing professional accounting, taxation, audit support and business consultancy services.
-
-We deliver integrated financial solutions tailored to SMEs, startups and large corporate organizations.
-
-</p>
-
-<p>
-
-Founded on the principles of accuracy, compliance and value creation, we help businesses navigate complex financial regulations while achieving long-term sustainable growth.
-
-</p>
-
+<h3>Accounting & Financial Reporting</h3>
+<p>Bookkeeping, Financial Statements and MIS Reporting.</p>
 </div>
 
 <div class="card">
-
-<h2>Our Vision</h2>
-
-<p>
-
-To be a leading regional firm in accounting, taxation and business advisory services, recognized for transforming compliance into a competitive business advantage through integrity, innovation and professional excellence.
-
-</p>
-
+<h3>Audit & Assurance</h3>
+<p>Internal Audit, Compliance Reviews and Audit Support.</p>
 </div>
 
 <div class="card">
-
-<h2>Our Mission</h2>
-
-<p>
-
-To engineer reliable, optimized and modern financial management systems that support organizations in maintaining regulatory compliance, improving financial performance and securing sustainable economic development.
-
-</p>
-
+<h3>Taxation Services</h3>
+<p>Corporate Tax Planning, VAT Services and Tax Compliance.</p>
 </div>
 
 <div class="card">
-
-<h2>Core Values</h2>
-
-<div class="values">
-
-<div class="value-box">
-<strong>Integrity & Ethics</strong><br>
-Honesty, transparency and ethical conduct in every engagement.
-</div>
-
-<div class="value-box">
-<strong>Professional Excellence</strong><br>
-Continuous mastery of accounting, taxation and IFRS standards.
-</div>
-
-<div class="value-box">
-<strong>Confidentiality & Trust</strong><br>
-Protecting client information with complete professionalism.
-</div>
-
-<div class="value-box">
-<strong>Accountability</strong><br>
-Taking ownership of every assignment and outcome.
-</div>
-
-<div class="value-box">
-<strong>Client-Centric Approach</strong><br>
-Delivering solutions tailored to client goals and growth.
-</div>
-
-<div class="value-box">
-<strong>Innovation & Efficiency</strong><br>
-Leveraging technology and automation to improve results.
+<h3>CFO Advisory</h3>
+<p>Budgeting, Cash Flow Forecasting and Strategic Advisory.</p>
 </div>
 
 </div>
 
+</section>
+
+<section class="section why">
+
+<h2>Why Choose Malik Associates?</h2>
+
+<div class="cards">
+
+<div class="card">
+Experienced Professionals
+</div>
+
+<div class="card">
+Regulatory Compliance Experts
+</div>
+
+<div class="card">
+Client-Focused Solutions
+</div>
+
+<div class="card">
+Modern Cloud Accounting Systems
 </div>
 
 </div>
+
+</section>
+
+<section class="section">
+
+<h2>Contact Us</h2>
+
+<div class="card">
+
+<p>📧 info@malikassociates.com</p>
+
+<p>📞 +92 320 5515000</p>
+
+<p>📱 +971 55 860 5398</p>
+
+<p>📍 Wah Cantt | Islamabad | Rawalpindi | Dubai</p>
+
+</div>
+
+</section>
 
 <footer>
 
 <h3>Malik Associates CMAs & CAs</h3>
 
 <p>
-
 Trusted Financial Partner for Compliance, Growth & Advisory Excellence
-
 </p>
 
 <br>
 
 <p>
-
-📞 +92 320 5515000 |
-📧 info@malikassociates.com
-
-</p>
-
-<br>
-
-<p>
-
 © 2026 Malik Associates. All Rights Reserved.
-
 </p>
 
 </footer>
+
+<a href="https://wa.me/971558605398" class="whatsapp">
+
+WhatsApp
+
+</a>
 
 </body>
 
