@@ -1,25 +1,378 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<title>Contact Us</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | Malik Associates</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f7fa;
+color:#333;
+line-height:1.7;
+}
+
+header{
+background:#003366;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+header img{
+width:120px;
+margin-bottom:15px;
+}
+
+header h1{
+font-size:42px;
+}
+
+header h3{
+color:#d4af37;
+margin-top:10px;
+}
+
+nav{
+background:#002244;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+.hero{
+background:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h2{
+color:#003366;
+font-size:42px;
+margin-bottom:15px;
+}
+
+.container{
+max-width:1300px;
+margin:auto;
+padding:50px 20px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+margin-bottom:40px;
+}
+
+.contact-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.office-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:30px;
+margin-bottom:50px;
+}
+
+.office-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.section-title{
+text-align:center;
+color:#003366;
+margin:40px 0;
+}
+
+.contact-form{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.contact-form button{
+background:#003366;
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.contact-form button:hover{
+background:#002244;
+}
+
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.contact-grid,
+.office-grid{
+grid-template-columns:1fr;
+}
+
+nav a{
+display:block;
+margin:10px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Contact Malik Associates</h1>
+<header>
 
-<p>Email: info@malikassociates.com</p>
+<img src="Logo.jpeg">
 
-<p>Phone: +92 320 5515 000</p>
+<h1>Malik Associates</h1>
 
-<p>WhatsApp: +971 55 860 5398</p>
+<h3>CMAs & CAs</h3>
 
-<p>Office Address:Office No 2, Pak Tower-1, M Block, New City Phase 2, Wah Cantt, Pakistan</p>
+<p>
+Trusted Financial Partner for Compliance, Growth & Advisory Excellence
+</p>
 
-<br>
+</header>
+
+<nav>
 
 <a href="index.html">Home</a>
+
+<a href="about.html">About Us</a>
+
+<a href="services.html">Services</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>Contact Us</h2>
+
+<p>
+We are ready to help your business with accounting, taxation, compliance and advisory solutions.
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>📞 Contact Information</h3>
+
+<p><strong>Primary Phone:</strong><br>
++92 320 5515 000</p>
+
+<p><strong>Secondary Phone:</strong><br>
++92 312 5533 086</p>
+
+<p><strong>WhatsApp:</strong><br>
++971 055 860 5398</p>
+
+<p><strong>Email:</strong><br>
+Admin@MalikAssociates.com</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>🕒 Business Hours</h3>
+
+<p>
+Monday – Friday<br>
+9:00 AM – 6:00 PM
+</p>
+
+<p>
+Saturday & Sunday<br>
+Closed
+</p>
+
+</div>
+
+</div>
+
+<h2 class="section-title">Our Offices</h2>
+
+<div class="office-grid">
+
+<div class="office-card">
+
+<h3>🏢 Head Office – Wah Cantt</h3>
+
+<p>
+Office No 2, Pak Tower-1,<br>
+M-Block,<br>
+New City Phase-II,<br>
+Main G.T Road,<br>
+Wah Cantt, Pakistan
+</p>
+
+</div>
+
+<div class="office-card">
+
+<h3>🏢 Islamabad Office</h3>
+
+<p>
+Arcade Plaza,<br>
+Office No 06,<br>
+1st Floor,<br>
+G-11 Markaz,<br>
+Islamabad
+</p>
+
+</div>
+
+<div class="office-card">
+
+<h3>🏢 Rawalpindi Office</h3>
+
+<p>
+Office #1 Floor 3,<br>
+Union Plaza Computer Market,<br>
+Saddar,<br>
+Rawalpindi
+</p>
+
+</div>
+
+</div>
+
+<h2 class="section-title">Send Us A Message</h2>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="text" placeholder="Company Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Phone Number">
+
+<select>
+
+<option>Select Service</option>
+
+<option>Accounting & Bookkeeping</option>
+
+<option>Financial Reporting</option>
+
+<option>Tax Services</option>
+
+<option>Audit & Assurance</option>
+
+<option>Business Setup Services</option>
+
+<option>Payroll & HR Services</option>
+
+<option>Compliance Services</option>
+
+<option>Advisory Services</option>
+
+<option>CFO Services</option>
+
+<option>Software Solutions</option>
+
+<option>Corporate Finance</option>
+
+<option>Training & Development</option>
+
+</select>
+
+<textarea rows="6" placeholder="Write Your Message"></textarea>
+
+<button type="submit">
+
+Submit Inquiry
+
+</button>
+
+</form>
+
+</div>
+
+<a href="https://wa.me/971558605398" class="whatsapp-btn">
+
+WhatsApp Us
+
+</a>
+
+<footer>
+
+<h3>Malik Associates CMAs & CAs</h3>
+
+<p>Trusted Financial Partner for Compliance, Growth & Advisory Excellence</p>
+
+<p>© 2026 Malik Associates. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 
