@@ -9,6 +9,8 @@
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap');
+
 *{
 margin:0;
 padding:0;
@@ -100,51 +102,141 @@ margin-top:30px;
 }
 
 .team-card{
-background:white;
-padding:25px;
+background:transparent;
 border-radius:20px;
 text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
 cursor:pointer;
-transition:.4s;
-border-top:5px solid #003366;
+perspective:1600px;
+height:460px;
 }
 
-.team-card:hover{
-transform:translateY(-8px);
+.team-card:hover .team-card-inner{
+transform:translateY(-6px) rotateY(0deg);
+}
+
+.team-card.flipped:hover .team-card-inner{
+transform:translateY(-6px) rotateY(180deg);
+}
+
+.team-card-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform .6s cubic-bezier(.4,.2,.2,1);
+transform-style:preserve-3d;
+}
+
+.team-card.flipped .team-card-inner{
+transform:rotateY(180deg);
+}
+
+.team-card-front,
+.team-card-back{
+position:absolute;
+inset:0;
+backface-visibility:hidden;
+border-radius:20px;
+background:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-top:5px solid #003366;
+padding:25px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.team-card-back{
+transform:rotateY(180deg);
+text-align:left;
+border-top:5px solid #d4af37;
+overflow-y:auto;
 }
 
 .team-card img{
-width:220px;
-height:220px;
+width:150px;
+height:150px;
 object-fit:cover;
 border-radius:50%;
 border:5px solid #003366;
-margin-bottom:15px;
+margin-bottom:14px;
+flex-shrink:0;
 }
 
 .team-card h3{
+font-family:'Cormorant Garamond',Georgia,serif;
+font-size:21px;
+font-weight:700;
 color:#003366;
-margin-bottom:8px;
+margin-bottom:6px;
+}
+
+.team-card-back h3{
+font-size:18px;
+text-align:center;
+width:100%;
 }
 
 .designation{
 font-weight:bold;
-color:#666;
+color:#d4af37;
+font-size:13px;
+letter-spacing:.3px;
+text-transform:uppercase;
+margin-bottom:12px;
+display:block;
+text-align:center;
+}
+
+.team-card-back .designation{
+margin-bottom:14px;
+}
+
+.short-profile{
+font-size:14px;
+color:#555;
+line-height:1.55;
+margin-bottom:auto;
+}
+
+.flip-hint{
+margin-top:14px;
+font-size:12.5px;
+color:#003366;
+font-weight:600;
+opacity:.75;
+}
+
+.edu-block{
+background:#f6f8fb;
+border-left:3px solid #d4af37;
+padding:10px 12px;
+border-radius:8px;
+margin-bottom:14px;
+font-size:13.5px;
+}
+
+.edu-block strong{
+color:#003366;
+}
+
+.edu-pending{
+color:#a08a3e;
+font-style:italic;
 }
 
 .partner-details{
-display:none;
-margin-top:20px;
-text-align:left;
+margin:0;
+padding:0;
 }
 
 .partner-details ul{
-padding-left:20px;
+padding-left:18px;
+font-size:13.5px;
 }
 
 .partner-details li{
-margin-bottom:10px;
+margin-bottom:8px;
+color:#444;
 }
 
 footer{
@@ -170,9 +262,17 @@ display:block;
 margin:10px;
 }
 
+.team-card{
+height:500px;
+}
+
 .team-card img{
-width:180px;
-height:180px;
+width:120px;
+height:120px;
+}
+
+.short-profile{
+font-size:13px;
 }
 
 }
@@ -257,23 +357,28 @@ To provide reliable financial solutions, strategic advisory services and modern 
 <h2>Leadership Team</h2>
 
 <p style="text-align:center;margin-bottom:20px;">
-Click on any partner profile to view expertise and professional highlights.
+Click on any partner profile to view education and professional highlights.
 </p>
 
 <div class="team-grid">
 
 <!-- Waheed -->
 
-<div class="team-card" onclick="toggleCard(this)">
+<div class="team-card" onclick="this.classList.toggle('flipped')">
+<div class="team-card-inner">
 
-<img src="Waheed.jpeg">
-
+<div class="team-card-front">
+<img src="Waheed.jpeg" alt="Waheed Ur Rehman">
 <h3>Waheed Ur Rehman, ACMA</h3>
-
 <p class="designation">Managing Partner</p>
+<p class="short-profile">An ACMA professional with 8+ years of experience, Waheed leads the firm's financial advisory and corporate tax practice, guiding clients through complex business decisions with strategic clarity.</p>
+<span class="flip-hint">Click to view education &amp; details →</span>
+</div>
 
-<div class="partner-details">
-
+<div class="team-card-back">
+<h3>Waheed Ur Rehman, ACMA</h3>
+<p class="designation">Managing Partner</p>
+<div class="edu-block"><strong>Education:</strong> <span class="edu-pending">Add education details</span></div>
 <ul>
 <li>ACMA Professional</li>
 <li>8+ Years of Professional Experience</li>
@@ -281,134 +386,166 @@ Click on any partner profile to view expertise and professional highlights.
 <li>Corporate Tax Specialist</li>
 <li>Strategic Business Consultant</li>
 </ul>
-
+<span class="flip-hint">← Click to go back</span>
 </div>
 
+</div>
 </div>
 
 <!-- Naeem -->
 
-<div class="team-card" onclick="toggleCard(this)">
+<div class="team-card" onclick="this.classList.toggle('flipped')">
+<div class="team-card-inner">
 
-<img src="Naeem.jpeg">
-
+<div class="team-card-front">
+<img src="Naeem.jpeg" alt="Naeem Akhter Malik">
 <h3>Naeem Akhter Malik, ACA, CIA</h3>
-
 <p class="designation">Partner</p>
-
-<div class="partner-details">
-
-<ul>
-<li>ACA & CIA Qualified Professional</li>
-<li>15+ Years of Professional Experience</li>
-<li>Audit & Assurance Expert</li>
-<li>Internal Controls & Risk Management Specialist</li>
-<li>Corporate Governance Consultant</li>
-</ul>
-
+<p class="short-profile">With 15+ years in audit and assurance, Naeem strengthens client governance through rigorous internal controls and risk management frameworks.</p>
+<span class="flip-hint">Click to view education &amp; details →</span>
 </div>
 
+<div class="team-card-back">
+<h3>Naeem Akhter Malik, ACA, CIA</h3>
+<p class="designation">Partner</p>
+<div class="edu-block"><strong>Education:</strong> <span class="edu-pending">Add education details</span></div>
+<ul>
+<li>ACA &amp; CIA Qualified Professional</li>
+<li>15+ Years of Professional Experience</li>
+<li>Audit &amp; Assurance Expert</li>
+<li>Internal Controls &amp; Risk Management Specialist</li>
+<li>Corporate Governance Consultant</li>
+</ul>
+<span class="flip-hint">← Click to go back</span>
+</div>
+
+</div>
 </div>
 
 <!-- Akhter -->
 
-<div class="team-card" onclick="toggleCard(this)">
+<div class="team-card" onclick="this.classList.toggle('flipped')">
+<div class="team-card-inner">
 
-<img src="Akhter.jpeg">
-
+<div class="team-card-front">
+<img src="Akhter.jpeg" alt="Akhter Rasul">
 <h3>Akhter Rasul, CPA</h3>
-
 <p class="designation">Partner</p>
+<p class="short-profile">Akhter brings 15+ years of expertise in financial reporting, tax planning, and process improvement to every client engagement.</p>
+<span class="flip-hint">Click to view education &amp; details →</span>
+</div>
 
-<div class="partner-details">
-
+<div class="team-card-back">
+<h3>Akhter Rasul, CPA</h3>
+<p class="designation">Partner</p>
+<div class="edu-block"><strong>Education:</strong> <span class="edu-pending">Add education details</span></div>
 <ul>
 <li>CPA Qualified Professional</li>
 <li>15+ Years of Professional Experience</li>
-<li>Financial Reporting & Compliance Expert</li>
-<li>Tax Planning & Advisory Specialist</li>
+<li>Financial Reporting &amp; Compliance Expert</li>
+<li>Tax Planning &amp; Advisory Specialist</li>
 <li>Business Process Improvement Consultant</li>
 </ul>
-
+<span class="flip-hint">← Click to go back</span>
 </div>
 
+</div>
 </div>
 
 <!-- Mansoor -->
 
-<div class="team-card" onclick="toggleCard(this)">
+<div class="team-card" onclick="this.classList.toggle('flipped')">
+<div class="team-card-inner">
 
-<img src="Mansoor.jpeg">
-
+<div class="team-card-front">
+<img src="Mansoor.jpeg" alt="Mansoor Akhter">
 <h3>Mansoor Akhter, CPA, CMA</h3>
-
 <p class="designation">Partner</p>
-
-<div class="partner-details">
-
-<ul>
-<li>CPA & CMA Qualified Professional</li>
-<li>6+ Years of Professional Experience</li>
-<li>Management Accounting Specialist</li>
-<li>Financial Analysis & Budgeting Expert</li>
-<li>Business Performance Consultant</li>
-</ul>
-
+<p class="short-profile">Mansoor specializes in management accounting, financial analysis, and budgeting, helping businesses translate numbers into performance.</p>
+<span class="flip-hint">Click to view education &amp; details →</span>
 </div>
 
+<div class="team-card-back">
+<h3>Mansoor Akhter, CPA, CMA</h3>
+<p class="designation">Partner</p>
+<div class="edu-block"><strong>Education:</strong> <span class="edu-pending">Add education details</span></div>
+<ul>
+<li>CPA &amp; CMA Qualified Professional</li>
+<li>6+ Years of Professional Experience</li>
+<li>Management Accounting Specialist</li>
+<li>Financial Analysis &amp; Budgeting Expert</li>
+<li>Business Performance Consultant</li>
+</ul>
+<span class="flip-hint">← Click to go back</span>
+</div>
+
+</div>
 </div>
 
 <!-- Azeem -->
 
-<div class="team-card" onclick="toggleCard(this)">
+<div class="team-card" onclick="this.classList.toggle('flipped')">
+<div class="team-card-inner">
 
-<img src="Azeem.jpeg">
-
+<div class="team-card-front">
+<img src="Azeem.jpeg" alt="Azeem Ullah">
 <h3>Azeem Ullah, FCA</h3>
+<p class="designation">Senior Partner &amp; Director Public Sector</p>
+<p class="short-profile">A Fellow Chartered Accountant, Azeem leads the firm's public sector advisory practice, specializing in government audit, compliance, and institutional development.</p>
+<span class="flip-hint">Click to view education &amp; details →</span>
+</div>
 
-<p class="designation">Senior Partner & Director Public Sector</p>
-
-<div class="partner-details">
-
+<div class="team-card-back">
+<h3>Azeem Ullah, FCA</h3>
+<p class="designation">Senior Partner &amp; Director Public Sector</p>
+<div class="edu-block"><strong>Education:</strong> <span class="edu-pending">Add education details</span></div>
 <ul>
 <li>Fellow Chartered Accountant (FCA)</li>
 <li>Public Sector Advisory Expert</li>
-<li>Government Audit & Compliance Specialist</li>
+<li>Government Audit &amp; Compliance Specialist</li>
 <li>Financial Governance Consultant</li>
-<li>Strategic Policy & Institutional Development Advisor</li>
+<li>Strategic Policy &amp; Institutional Development Advisor</li>
 </ul>
-
+<span class="flip-hint">← Click to go back</span>
 </div>
 
+</div>
 </div>
 
 <!-- Saqib -->
 
-<div class="team-card" onclick="toggleCard(this)">
+<div class="team-card" onclick="this.classList.toggle('flipped')">
+<div class="team-card-inner">
 
-<img src="Saqib.jpeg">
-
+<div class="team-card-front">
+<img src="Saqib.jpeg" alt="Saqib Aneel">
 <h3>Saqib Aneel, FCA</h3>
-
 <p class="designation">Partner</p>
+<p class="short-profile">With 16+ years in audit and corporate finance, Saqib advises clients on regulatory compliance and tax strategy across diverse industries.</p>
+<span class="flip-hint">Click to view education &amp; details →</span>
+</div>
 
-<div class="partner-details">
-
+<div class="team-card-back">
+<h3>Saqib Aneel, FCA</h3>
+<p class="designation">Partner</p>
+<div class="edu-block"><strong>Education:</strong> <span class="edu-pending">Add education details</span></div>
 <ul>
 <li>Fellow Chartered Accountant (FCA)</li>
 <li>16+ Years of Professional Experience</li>
-<li>Audit & Assurance Specialist</li>
-<li>Corporate Finance & Tax Advisory Expert</li>
+<li>Audit &amp; Assurance Specialist</li>
+<li>Corporate Finance &amp; Tax Advisory Expert</li>
 <li>Regulatory Compliance Consultant</li>
 </ul>
+<span class="flip-hint">← Click to go back</span>
+</div>
 
+</div>
 </div>
 
 </div>
 
 </div>
 
-</div>
 
 </div>
 
@@ -427,22 +564,6 @@ Click on any partner profile to view expertise and professional highlights.
 <p>© 2026 Malik Associates. All Rights Reserved.</p>
 
 </footer>
-
-<script>
-
-function toggleCard(card){
-
-let details = card.querySelector(".partner-details");
-
-if(details.style.display==="block"){
-details.style.display="none";
-}else{
-details.style.display="block";
-}
-
-}
-
-</script>
 
 </body>
 </html>
