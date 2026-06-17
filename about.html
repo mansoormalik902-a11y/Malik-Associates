@@ -431,6 +431,16 @@ textarea:focus-visible{
   border-top:3px solid var(--gold);
   border-radius:var(--radius-md);
   padding:30px 26px;
+  min-height:340px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.value-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-md);
 }
 .value-card h3{font-size:1.15rem;margin-bottom:12px;}
 .value-card p{font-size:0.94rem;margin-bottom:10px;}
@@ -551,20 +561,56 @@ textarea:focus-visible{
   <section class="values" id="about">
     <div class="container">
       <div class="value-grid">
-        <div class="value-card">
-          <h3>Who We Are</h3>
-          <p>Malik Associates is a professional accounting and advisory firm providing accounting, taxation, audit support, compliance and business consulting services.</p>
-          <p>We help SMEs, startups and corporate organizations achieve financial clarity, regulatory compliance and sustainable growth.</p>
-        </div>
-        <div class="value-card">
-          <h3>Our Vision</h3>
-          <p>To become a leading accounting and advisory firm recognized for excellence, innovation and trusted financial guidance.</p>
-        </div>
-        <div class="value-card">
-          <h3>Our Mission</h3>
-          <p>To provide reliable financial solutions, strategic advisory services and modern reporting systems that empower businesses to achieve long-term success.</p>
-        </div>
-      </div>
+
+    <div class="value-card">
+        <h3>Who We Are</h3>
+
+        <p>
+            Malik Associates is a premier accounting, taxation, audit and business advisory firm committed to delivering practical financial solutions tailored to modern business requirements.
+        </p>
+
+        <p>
+            Our team of qualified professionals combines technical expertise, industry knowledge and strategic insight to help organizations strengthen financial performance and maintain regulatory compliance.
+        </p>
+
+        <p>
+            Serving clients across Pakistan and the UAE, we support startups, SMEs and established enterprises in achieving sustainable growth and long-term success.
+        </p>
+    </div>
+
+    <div class="value-card">
+        <h3>Our Vision</h3>
+
+        <p>
+            To be recognized as a leading professional services firm known for excellence, integrity and innovation in accounting, taxation, audit and advisory services.
+        </p>
+
+        <p>
+            We aspire to become the trusted partner of choice for businesses seeking strategic guidance, financial leadership and sustainable value creation.
+        </p>
+
+        <p>
+            Through continuous improvement and professional excellence, we aim to set new standards in client service and business advisory.
+        </p>
+    </div>
+
+    <div class="value-card">
+        <h3>Our Mission</h3>
+
+        <p>
+            To deliver reliable financial solutions, strategic advisory services and modern reporting systems that empower informed business decision-making.
+        </p>
+
+        <p>
+            We are committed to providing timely, accurate and value-driven services that enhance operational efficiency, financial transparency and regulatory compliance.
+        </p>
+
+        <p>
+            By building long-term relationships founded on trust, professionalism and integrity, we help businesses achieve their growth objectives with confidence.
+        </p>
+    </div>
+
+</div></div>
     </div>
   </section>
 
