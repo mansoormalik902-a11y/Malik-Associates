@@ -503,7 +503,54 @@ textarea:focus-visible{
   .hero-home .hero-actions{flex-direction:column;align-items:stretch;}
   .hero-home .hero-actions .btn{justify-content:center;}
 }
+/* =========================
+   CLIENT TESTIMONIALS
+========================= */
 
+.testimonial-section{
+  padding:90px 0;
+  background:#f8fafc;
+}
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:25px;
+}
+
+.testimonial-card{
+  background:#ffffff;
+  padding:35px;
+  border-radius:18px;
+  border-top:4px solid #D4AF37;
+  box-shadow:0 10px 30px rgba(0,51,102,.08);
+  transition:all .3s ease;
+}
+
+.testimonial-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(0,51,102,.15);
+}
+
+.stars{
+  color:#D4AF37;
+  font-size:1.4rem;
+  margin-bottom:15px;
+  letter-spacing:3px;
+}
+
+.testimonial-card p{
+  font-style:italic;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.testimonial-card h4{
+  color:#003366;
+  margin:0;
+  font-size:1rem;
+  font-weight:700;
+}
 </style>
 </head>
 <body>
@@ -594,7 +641,45 @@ textarea:focus-visible{
       </div>
     </div>
   </section>
+<section class="testimonial-section">
+  <div class="container">
 
+    <div class="section-head">
+      <span class="eyebrow">Client Feedback</span>
+      <h2>What Our Clients Say</h2>
+      <p>Trusted by businesses across Pakistan and the UAE.</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+          Malik Associates provided exceptional support in accounting and tax compliance. Their professionalism and responsiveness exceeded our expectations.
+        </p>
+        <h4>Trading Company Client</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+          The team helped us improve financial reporting and internal controls, giving management better visibility and confidence.
+        </p>
+        <h4>Manufacturing Business</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>
+          Reliable, knowledgeable and highly professional. We highly recommend Malik Associates for taxation and advisory services.
+        </p>
+        <h4>Service Sector Client</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
   <section class="cta-band">
     <div class="container">
       <h2>Your Success Starts With The Right Partner</h2>
