@@ -431,24 +431,24 @@ background:linear-gradient(
 .values{padding:90px 0 30px;background:var(--white);}
 .value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
 .value-card{
-  background:var(--bg-soft);
-  border-top:3px solid var(--gold);
-  border-radius:var(--radius-md);
-  padding:30px 26px;
-  min-height:340px;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  transition:transform .25s ease, box-shadow .25s ease;
+    background:#ffffff;
+    border-top:4px solid #D4AF37;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:all .3s ease;
 }
 
 .value-card:hover{
-  transform:translateY(-5px);
-  box-shadow:var(--shadow-md);
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
 }
-.value-card h3{font-size:1.15rem;margin-bottom:12px;}
-.value-card p{font-size:0.94rem;margin-bottom:10px;}
-.value-card p:last-child{margin-bottom:0;}
+.value-card p{
+    color:#5b6878;
+    line-height:1.8;
+    margin-bottom:14px;
+}
 
 /* ---------- Leadership team ---------- */
 .team-section{padding:70px 0 96px;background:var(--white);}
