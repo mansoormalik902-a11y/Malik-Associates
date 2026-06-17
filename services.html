@@ -10,6 +10,54 @@
 <title>Services | Malik Associates</title>
 
 <style>
+  .service-category{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-top:5px solid #d4af37;
+}
+
+.category-title{
+background:#003366;
+color:white;
+padding:18px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.category-content{
+display:none;
+padding:20px;
+}
+
+.service-item{
+background:#f8f9fb;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.service-item h4{
+color:#003366;
+margin-bottom:10px;
+}
+
+.service-item ul{
+padding-left:20px;
+margin-bottom:15px;
+}
+
+.whatsapp-btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
 
 *{
 margin:0;
@@ -159,6 +207,15 @@ font-size:28px;
 </head>
 
 <body>
+  <script>
+document.querySelectorAll('.category-title').forEach(function(item){
+item.addEventListener('click',function(){
+const content=this.nextElementSibling;
+content.style.display=
+content.style.display==="block"?"none":"block";
+});
+});
+</script>
 <body>
 
 <header>
@@ -197,15 +254,57 @@ Explore our specialized solutions designed to help businesses achieve compliance
 <div class="container">
 
 <div class="service-card">
-<h3>Financial Accounting & Bookkeeping</h3>
-<div class="service-links">
-<a class="service-btn" href="https://wa.me/971558605398?text=Hello Malik Associates, I am interested in Financial Accounting Services." target="_blank">Financial Accounting</a>
-<a class="service-btn" href="https://wa.me/971558605398?text=Hello Malik Associates, I am interested in Bookkeeping Services." target="_blank">Bookkeeping Services</a>
-<a class="service-btn" href="https://wa.me/971558605398?text=Hello Malik Associates, I am interested in Financial Reporting." target="_blank">Financial Reporting</a>
-<a class="service-btn" href="https://wa.me/971558605398?text=Hello Malik Associates, I am interested in Management Accounts." target="_blank">Management Accounts</a>
-<a class="service-btn" href="https://wa.me/971558605398?text=Hello Malik Associates, I am interested in Outsourced Finance Function." target="_blank">Outsourced Finance Function</a>
+<div class="service-category">
+
+<div class="category-title">
+Financial Accounting & Bookkeeping
 </div>
+
+<div class="category-content">
+
+<div class="service-item">
+
+<h4>Financial Accounting</h4>
+
+<ul>
+<li>Preparation of IFRS-compliant financial statements</li>
+<li>General ledger review and account reconciliation</li>
+<li>Month-end and year-end financial closing</li>
+<li>Accounting policy development and implementation</li>
+<li>Financial compliance and statutory reporting</li>
+</ul>
+
+<a class="whatsapp-btn"
+href="https://wa.me/971558605398?text=Hello Malik Associates,%0A%0ACategory:%20Financial Accounting & Bookkeeping%0AService:%20Financial Accounting"
+target="_blank">
+Request Service via WhatsApp
+</a>
+
 </div>
+
+<div class="service-item">
+
+<h4>Bookkeeping Services</h4>
+
+<ul>
+<li>Recording and classification of financial transactions</li>
+<li>Maintenance of books of accounts</li>
+<li>Accounts payable and receivable management</li>
+<li>Bank and cash reconciliations</li>
+<li>Financial records management and documentation</li>
+</ul>
+
+<a class="whatsapp-btn"
+href="https://wa.me/971558605398?text=Hello Malik Associates,%0A%0ACategory:%20Financial Accounting & Bookkeeping%0AService:%20Bookkeeping Services"
+target="_blank">
+Request Service via WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div></div>
 
 <div class="service-card">
 <h3>Audit & Assurance</h3>
