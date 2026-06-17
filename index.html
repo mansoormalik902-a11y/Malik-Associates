@@ -604,6 +604,65 @@ rgba(15,76,129,0.78) 100%
 grid-template-columns:1fr;
 }
 }
+  /* ===== BY THE NUMBERS ===== */
+
+.stats-section{
+    padding:90px 0;
+    background:linear-gradient(
+        135deg,
+        #041728 0%,
+        #071B33 55%,
+        #0F4C81 100%
+    );
+}
+
+.stats-section .section-head h2{
+    color:#ffffff;
+}
+
+.stats-section .section-head p{
+    color:#dce6f0;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:18px;
+    padding:35px 20px;
+}
+
+.stat-num{
+    font-size:3rem;
+    font-weight:700;
+    color:#D4AF37;
+    line-height:1;
+    margin-bottom:12px;
+}
+
+.stat-card p{
+    color:#ffffff;
+    font-size:1rem;
+    margin:0;
+}
+
+@media(max-width:900px){
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+}
 </style>
 </head>
 <body>
