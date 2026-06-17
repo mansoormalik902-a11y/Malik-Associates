@@ -440,6 +440,9 @@ background:linear-gradient(
     padding:80px 0;
 }
   .value-card{
+    display:flex;
+flex-direction:column;
+height:100%;
     background:#ffffff;
     border-top:4px solid #D4AF37;
     border-radius:18px;
@@ -528,15 +531,26 @@ background:linear-gradient(
 /* ABOUT INTRODUCTION */
 
 .about-introduction{
-    max-width:1000px;
+    max-width:1100px;
     margin:0 auto 60px;
     text-align:center;
 }
 
 .about-introduction h2{
     color:#071B33;
-    font-size:2.4rem;
-    margin-bottom:25px;
+    font-size:2.6rem;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.about-introduction h2::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:4px;
+    background:#D4AF37;
+    margin:15px auto 0;
+    border-radius:10px;
 }
 
 .about-introduction p{
@@ -544,6 +558,19 @@ background:linear-gradient(
     line-height:1.9;
     color:#5b6878;
     margin-bottom:18px;
+}
+  .values-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+    align-items:stretch;
+}
+
+@media(max-width:900px){
+    .values-grid{
+        grid-template-columns:1fr;
+    }
 }
 </style>
 </head>
