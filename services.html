@@ -72,7 +72,7 @@ section{scroll-margin-top:var(--header-h);}
 /* ---------- Visually hidden / skip link ---------- */
 .skip-link{
   position:absolute;left:-9999px;top:auto;
-  background:var(--navy);color:#fff;padding:10px 16px;border-radius:0 0 8px 0;z-index:2000;
+  background:var(--navy);color:#fff;padding:10px 16px;border-radius:0 0 8px 0;z-:2000;
 }
 .skip-link:focus{left:0;top:0;}
 
@@ -112,7 +112,7 @@ input:focus-visible{
    HEADER
    ========================================================= */
 .site-header{
-  position:sticky;top:0;z-index:1000;
+  position:sticky;top:0;z-:1000;
   background:rgba(255,255,255,0.97);
   border-bottom:1px solid var(--border-soft);
   height:var(--header-h);
@@ -244,7 +244,7 @@ input:focus-visible{
   background-size:64px 64px;
 }
 .hero-inner{
-  position:relative;z-index:1;
+  position:relative;z-:1;
   max-width:760px;margin:0 auto;text-align:center;
 }
 .hero-rule{
@@ -585,7 +585,7 @@ input:focus-visible{
 .contact .section-head p{color:var(--text-on-navy);}
 .contact .section-head h2{color:var(--white);}
 .contact-grid{
-  position:relative;z-index:1;
+  position:relative;z-:1;
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:20px;
@@ -616,7 +616,7 @@ input:focus-visible{
 .contact-card a:hover{color:var(--gold-light);text-decoration:underline;}
 
 .contact-cta{
-  position:relative;z-index:1;
+  position:relative;z-:1;
   text-align:center;
 }
 .contact-cta .btn-gold{font-size:1rem;padding:16px 34px;}
@@ -682,7 +682,7 @@ input:focus-visible{
     visibility:hidden;
     pointer-events:none;
     transition:opacity .22s var(--ease), transform .22s var(--ease), visibility .22s;
-    z-index:999;
+    z-:999;
   }
   .main-nav.open{
     opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;
@@ -747,10 +747,15 @@ input:focus-visible{
 
     <nav class="main-nav" aria-label="Primary navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="insights.html">Insights</a>
+<a href="contact.html">Contact</a>
+
+</nav>
       </ul>
     </nav>
 
